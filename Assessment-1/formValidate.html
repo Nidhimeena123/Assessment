@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="myform" method="post" onSubmit="return validate()">
+        <table align="center" cellpadding="10">
+            <tr>
+                <td> First Name </td>
+                <td> <input type="text" name="fname" maxlength="30" />
+                </td>
+            </tr>
+            <tr>
+                <td> Last Name </td>
+                <td> <input type="text" name="lname" maxlength="30" />
+                </td>
+            </tr>
+            <tr>
+                <td> Email ID </td>
+                <td> <input type="text" name="email" maxlength="100" />
+                </td>
+            </tr>
+            <tr>
+            <tr>
+                <td> Mobile </td>
+                <td> <input type="text" name="mobile" />
+                </td>
+            </tr>
+            <tr>
+                <td> Gender </td>
+                <td> Male <input type="radio" name="gender" value="male" />
+                    Female <input type="radio" name="gender" value="female" />
+                </td>
+            </tr>
+            <td> Date of Birth </td>
+            <td> <input type="date" name="date" id="date" min="1981-01-01" />
+            </td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td> <textarea name="address" cols="30"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td> <input type="text" name="city" id="city" />
+                </td>
+            </tr>
+            <tr>
+                <td> Area Pin</td>
+                <td> <input type="text" name="pin" maxlength="9" />
+                </td>
+            </tr>
+            <tr>
+                <td> State </td>
+                <td> <input type="text" name="state"  />
+                </td>
+            </tr>
+            <tr>
+                <td>Qualification</td>
+                <td> <select id="Qualification" name="Qualification">
+                <option value="Select Qualification" name>Select Qualification</option>
+                <option value="10th">10th</option>
+                <option value="12th">12th</option>
+                <option value="diploma">diploma</option>
+                </select>
+                </td>
+                </tr>
+
+                <tr>
+                    <td>Specialization </td>
+                    <td><input type="checkbox" name="Specialization" value="Science" id="Specialization"/>Computer Science
+                        <br>
+                    <input type="checkbox" name="Specialization" value="Technology" id="Specialization"/> Information Technology
+                    <br>
+                    <input type="checkbox" name="Specialization" value="Architecture" id="Specialization"/>Computer Architecture
+                    <br>
+                    <input type="checkbox" name="Specialization" value="Communication" id="Specialization"/>Tele Communication
+                    </td>
+                    </tr>
+                    <tr>
+                        <td> Password </td>
+                        <td> <input type="text" name="pass"  />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                        <input type="submit" name="submit" value="Submit" />
+                        </td>
+                    </tr>
+        </table>
+    </form>
+
+    <script type="text/javascript" src="formValidate.js"></script>
+</body>
+
+</html>
