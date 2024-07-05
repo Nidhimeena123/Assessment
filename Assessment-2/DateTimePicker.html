@@ -1,82 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-    
+
     <div class="container register-form">
         <div class="form">
-        <div class="note">
-        <p>Date Calculation Between Two Dates in Years Months Days.
-        </div>
-        <div class="form-content">
-        <div class="row">
-        <div class="col-md-6">
-        <label>From Date</label>
-        <div class="form-group">
-        <input type="date" id="d1" class="form-control">
-        </div>
-        </div>
-        <div class="col-md-6">
-        <label>To Date</label>
-        <div class="form-group">
-        <input type="date" id="d2" class="form-control">
-        </div>
-        </div>
-        </div>
+            <div class="note">
+                <p>Date Calculation Between Two Dates in Years Months Days.
+            </div>
+            <div class="form-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>From Date</label>
+                        <div class="form-group">
+                            <input type="date" id="d1" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label>To Date</label>
+                        <div class="form-group">
+                            <input type="date" id="d2" class="form-control">
+                        </div>
+                    </div>
+                </div>
 
-        <div class="row">
-            <div class="col-md-12">
-            <label>Result</label>
-            <div class="form-group">
-            <input type="text" name="Result" id="age" readonly class="form-control">
-            <button type="button" class="btnSubmit" id="calculate">Submit</button>
-            </div>
-            </div>
-            </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <label>Result</label>
+                        <div class="form-group">
+                            <input type="text" name="Result" id="age" readonly class="form-control">
+                            </div>
+                            </div>
+                            </div>
 
-<script>
-            $(document).ready(function(){
-                $('#calculate').click(function(){
-                var empf=document.getElementById("d1").value;
-                var empt = document.getElementById("d2").value;
-                var d1 = new Date(empf);
-                var d2 = new Date(empt);
-                var Months = d2.getMonth() - d1.getMonth();
-                var Years = d2.getFullYear() - d1.getFullYear();
-                var Days = d2.getDate() - d1.getDate();
-                Months = (d2.getMonth() + 12*d2.getFullYear())-
-                (d1.getMonth()+12*d1.getFullYear());
-                var MonthOverflow = 0;
-                if (Months - (Years*12) <= 0)
-                MonthOverFlow = -1; else
-                MonthOverFlow = 1;
-                if (MonthOverFlow < 0)
-                Years = Years -1;
-                Months = Months - (Years*12);
-                var LastDayOfMonth = new Date(d2.getFullYear().
-                d2.getMonth() + 1, 0, 23, 59, 59);
-                LastDayOfMonth = LastDayOfMonth.getDate();
-                if (MonthOverFlow < 0 && (d1.getDate() >d2.getDate())){
-                Days = LastDayOfMonth + (d2.getDate()-d1.getDate()) -1; }
-                else Days = d2.getDate()-d1.getDate();
-                if (Days <0) Months = Months - 1;
-                var I = new Date(d2.getFullYear(), d2.getMonth(), 0);
-                var I1 = new Date(d1.getFullYear(), d1.getMonth() + 1, 0);
-                if (Days <0) { 
-                    if (I1 > 1) Days = I1.getDate()+ Days;
-                else Days =I.getDate() + Days;
-                var e1 = Years + "Year," + Months+"Months," + Days + "Days";
-                document.getElementById("age").value = e1;
-            }});
-            });
-        
-                </script>
-</body>
+                            <button type="button" class="btnSubmit" id="calculate">Submit</button>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </body>
 </html>
