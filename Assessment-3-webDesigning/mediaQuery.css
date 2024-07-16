@@ -1,0 +1,28 @@
+@media screen and (max-width: 480px) {
+     .header1{
+        padding: 7px 20px;
+    }
+    .nav-bar{
+        display: block;
+        text-align: center;
+    }
+    .nav-links ul{
+        display: block;
+    }
+    .heading{
+        width: 300px;
+        text-align: center;
+    }
+    .blocks{
+        margin: 0;
+        position: relative;
+        display: block;
+    }
+    .box{
+        width: 100%;
+        padding: 10px 0;
+        margin: 10px 0;
+        border-radius:0;
+    }
+
+  }
