@@ -41,5 +41,48 @@
         display: block;
         margin-left: 0;
     }
+    .apply{
+        background-image: none;
+        display: block;
+    }
+    .bachelor{
+        width: 100%;
+    }
+    .apply-box{
+        width: 100%;
+    }
+    .courses-box{
+        display: block;
+    }
+    .facts{
+        background-image: none;
+    }
+    .facts-title{
+        text-align: center;
+        margin: 0 ;
+        width: 100%;
+     }
+    .facts-boxex{
+        display: block;
+    }
+    .right-fact img{
+        display: none;
+    }
 
+    .form{
+        display: block;
+     }
+     .input{
+        display: block;
+     }
+     .input input{
+        width: 100%;
+     }
+     .input textarea{
+        width: 100%;
+     }
+     .message button{
+        width: 100%;
+     }
+    
   }

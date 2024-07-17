@@ -181,16 +181,184 @@ body{
  .apply{
     display: flex;
     align-items: center;
-    background-image: url("https://t4.ftcdn.net/jpg/02/70/46/43/360_F_270464397_cvBt3h6cgQJMPVhaVjDot1Dovn8rLryo.jpg");
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/735/780/874/blur-class-seminar-wallpaper-preview.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
  }
+ .apply-degree{
+   margin: 90px 50px;
+ }
  .bachelor{
-    width: 400px;
+    width: 500px;
     margin-bottom: 10px;
-    background-color: rgba(101, 100, 100, 0.4);
-
+    background-color: rgba(89, 88, 88, 0.6);
+    padding: 30px 15px;
+    color: white;
+ }
+ .bachelor p{
+   padding: 15px 0;
+ }
+ .bachelor button{
+   padding: 8px 25px;
+ }
+ .btn1{
+   color: white;
+   background-color: rgb(239, 118, 118);
+   border: none;
+   border-radius: 15px;
+ }
+ .btn2{
+   color: white;
+   background-color: rgb(221, 221, 113);
+   border: none;
+   border-radius: 15px;
  }
 
+ .apply-box{
+   width: 600px;
+   background-color: white;
+   border-radius: 15px;
+ }
+ .apply-box-content{
+   padding: 10px 30px;
+ }
+ .apply-box-content h3{
+   padding: 10px 0;
+ }
+ .apply-box-content p{
+   padding: 10px 0;
+ }
 
+ /* COURSES */
+.courses{
+   margin: 60px;
+}
+.courses-title{
+   color: white;
+}
+.courses-box{
+   display: flex;
+}
+.courses-content{
+   background-color: white;
+   margin-right: 8px;
+   margin-top: 20px;
+   width: 300px;
+}
+.courses-box-tile h5{
+   text-align: center;
+   font-size: 15px;
+   padding: 0 60px;
+}
+.courses-rating-price{
+   display: flex;
+   justify-content: space-between;
+   padding: 8px 15px ;
+   font-size: 12px;
+}
+.rating i{
+color: rgb(197, 197, 99);
+}
+.courses-rating-price p{
+   color: red;
+   font-weight: bold;
+}
+
+/* FACTS */
+.facts{
+   padding: 40px 0;
+   background-image: url("https://img.freepik.com/free-photo/school-classroom-blur-background-without-young-student-blurry-view-elementary-class-room-no-kid-teacher-with-chairs-tables-campus-vintage-effect-style-pictures_1253-1375.jpg?w=360");
+   background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.facts-title{
+   margin: 0 180px;
+   color: rgb(11, 11, 11);
+   font-size: 20px;
+   font-weight: bold;
+   width: 350px;
+}
+.facts-boxex{
+   display: flex;
+   justify-content: space-evenly
+}
+
+.left-fact{
+   width: 400px;
+   display: grid;
+   grid-template-columns: auto auto;
+   margin: 20px 0;
+}
+.left-fact-box{
+   text-align: center;
+   margin: 9px;
+   padding: 15px 5px;
+   border-radius: 12px;
+   background-color: rgba(89, 88, 88, 0.6);
+}
+.left-fact-box p{
+   font-size: 20px;
+   font-weight: bold;
+}
+.right-fact img{
+   opacity: 0.7;
+   border-radius: 20px;
+}
+
+/* FORM */
+.form{
+   display: flex;
+   align-items: center;
+   margin: 50px 0;
+   justify-content: space-evenly;
+}
+.form-input-tilte{
+   padding: 30px 0;
+   letter-spacing: 1px;
+}
+.form-input{
+   background-color: white;
+   padding: 0px 50px;
+   border-radius: 12px;
+}
+.input{
+   display: grid;
+   grid-template-columns: auto auto auto;
+   padding: 10px 0 50px 0;
+}
+.input input{
+   padding: 8px 15px;
+   margin: 9px;
+   border: none;
+   background-color: rgb(235, 236, 237);
+   outline: none;
+}
+.input textarea{
+   padding: 8px 15px;
+   margin: 7px;
+   border: none;
+   background-color: rgb(235, 236, 237);
+   outline: none;
+}
+.message button{
+   padding: 10px 40px;
+   margin: 0 0 20px 0;
+   border: none;
+   border-radius: 20px;
+   font-weight: bold;
+   color: white;
+   background-color: rgb(239, 118, 118);
+}
+.info{
+   background-color:  rgb(239, 118, 118);
+   border-radius: 12px;
+   color: white;
+}
+.info-content{
+   padding: 20px 50px;
+}
+.info-content h5,p{
+   font-size: 18px;
+}
