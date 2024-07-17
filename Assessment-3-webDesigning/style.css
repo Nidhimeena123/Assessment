@@ -7,14 +7,16 @@
 .container{
     overflow: hidden;
 }
+body{
+    position: relative;
+    background-color: rgb(52, 50, 50);
+}
 
 /* HEADER-1 */
 .header1{
-    position: relative;
     display: flex;
     justify-content: space-between;
     padding: 7px 60px;
-    background-color: black;
     color: white;
 }
 
@@ -79,7 +81,7 @@
     top: 80%;
     display: flex;
     align-items: center;
-    margin: 0 10%;
+    margin: 0  10%;
  }
  .box{
     background-color: rgb(239, 118, 118);
@@ -102,3 +104,93 @@
     font-size: 22px;
     color: white;
  }
+
+ /* UPCOMING MEETING */
+ .meetings{
+    position: absolute;
+    margin-top: 100px;
+    width: 100%;
+ }
+ .meeting-title{
+    width: 100%;
+    text-align: center;
+    color: white;
+ }
+
+ .meeting-boxex{
+    display: flex;
+    margin: 80px 20px;
+ }
+
+ .first-meeting-box{
+    background-color: white;
+    height: 270px;
+    width: 300px;
+    padding: 15px 20px;
+    border-radius: 12px;
+ }
+ .first-meeting-box-title{
+    letter-spacing: 1px;
+ }
+ .categories-items{
+    margin: 25px 0;
+    line-height: 25px;
+ }
+ .btn button{
+    padding: 8px 29px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(239, 118, 118);
+ }
+
+ .second-meeting-box{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 100px;
+ }
+ .meeting-box{
+    background-color: white;
+    width: 352px;
+    margin: 0 8px 10px 20px;
+    border-radius: 15px;
+ }
+
+ .meeting-box img{
+    height: 235px;
+    border-radius: 15px;
+ }
+
+ .box-content{
+    display: flex;
+    padding: 10px 10px;
+ }
+ .date{
+    text-align: center;
+    font-size: 20px;
+ }
+ .box-heading {
+    padding: 0 20px;
+ }
+ .box-heading h5{
+    font-size: 15px;
+ }
+
+ /* APPLY */
+ .apply{
+    display: flex;
+    align-items: center;
+    background-image: url("https://t4.ftcdn.net/jpg/02/70/46/43/360_F_270464397_cvBt3h6cgQJMPVhaVjDot1Dovn8rLryo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ .bachelor{
+    width: 400px;
+    margin-bottom: 10px;
+    background-color: rgba(101, 100, 100, 0.4);
+
+ }
+
+
